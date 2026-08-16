@@ -1,0 +1,3 @@
+
+
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-evolution
