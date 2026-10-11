@@ -14,7 +14,7 @@ TARGET_LINUX_KERNEL_VERSION := 6.1
 # Custom kernel path selection logic ------------------
 BASE_KERNEL_PATH := device/google/pixel-kernels
 
-DEFAULT_KERNEL_FOLDER := shiba-bp3a.251105.015
+DEFAULT_KERNEL_FOLDER := shiba_wksu21
 DEFAULT_KERNEL_DIR := $(BASE_KERNEL_PATH)/$(DEFAULT_KERNEL_FOLDER)
 
 SELECTED_KERNEL_DIR :=
@@ -47,6 +47,10 @@ endif
 
 # Inherit from zuma
 include device/google/zuma/common.mk
+
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # GPS
 PRODUCT_PACKAGES += \

@@ -55,7 +55,6 @@ vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr
 vendor/bin/hw/android.hardware.power.stats-service.pixel
 vendor/bin/hw/android.hardware.secure_element-service.uicc
 vendor/bin/hw/android.hardware.security.keymint-service.citadel
-vendor/bin/hw/android.hardware.thermal-service.pixel
 vendor/bin/hw/android.hardware.usb-service
 vendor/bin/hw/android.hardware.usb.gadget-service
 vendor/bin/hw/android.hardware.vibrator-service.cs40l26
@@ -97,7 +96,6 @@ vendor/bin/shamp
 vendor/bin/shared_modem_platform
 vendor/bin/sscoredump
 vendor/bin/storage_init.sh
-vendor/bin/thermal_symlinks
 vendor/bin/touch_gti_ical
 vendor/bin/trusty_metricsd
 vendor/bin/twoshay
@@ -291,7 +289,6 @@ vendor/etc/init/android.hardware.power-service.pixel-libperfmgr.rc
 vendor/etc/init/android.hardware.power.stats-service.pixel.rc
 vendor/etc/init/android.hardware.secure_element-service.uicc.rc
 vendor/etc/init/android.hardware.security.keymint-service.citadel.rc
-vendor/etc/init/android.hardware.thermal-service.pixel.rc
 vendor/etc/init/android.hardware.usb-service.rc
 vendor/etc/init/android.hardware.usb.gadget-service.rc
 vendor/etc/init/android.hardware.vibrator-service.cs40l26.rc
@@ -344,7 +341,6 @@ vendor/etc/init/pcie_power.rc
 vendor/etc/init/pixel-bgtasks-experiment.rc
 vendor/etc/init/pixel-experiments-recovery.rc
 vendor/etc/init/pixel-sched-proxy-exec-experiment.rc
-vendor/etc/init/pixel-thermal-symlinks.rc
 vendor/etc/init/pixel-zram-comp-algorithm-experiment.rc
 vendor/etc/init/pixelstats-vendor.zuma.rc
 vendor/etc/init/pktrouter.rc
@@ -448,7 +444,6 @@ vendor/etc/vintf/manifest/android.hardware.power-service.pixel.xml
 vendor/etc/vintf/manifest/android.hardware.power.stats-service.pixel.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-v3.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharesecret-service.citadel.xml
-vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml
 vendor/etc/vintf/manifest/android.hardware.usb-service.xml
 vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.xml
 vendor/etc/vintf/manifest/android.hardware.vibrator-service.cs40l26.xml
@@ -2234,7 +2229,6 @@ vendor/lib64/pixelatoms-cpp.so
 vendor/lib64/pixelstats_flags_c_lib.so
 vendor/lib64/sensors.usf.so
 vendor/lib64/soundfx/libspatialaudio.so
-vendor/lib64/thermal-budget-interface-ndk.so
 vendor/lib64/vendor.google.battery_mitigation-V1-ndk.so
 vendor/lib64/vendor.google.battery_mitigation.service_static.so
 vendor/lib64/vendor.google.bluetooth_ext-V1-ndk.so
